@@ -1,6 +1,7 @@
 using System.Net.Http.Headers;
 using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
+using ProjInter_MVC.Models;
 
 namespace ProjInter_MVC.Controllers;
 
