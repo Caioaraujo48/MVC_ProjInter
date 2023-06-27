@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "dgSpecHash": "7ym94hsfnoQJMXi4Fgn+29HPtiX2dxoazDkNrhuUkECeuTuYOzqwUpOVt+YKawCU/8iQfNcIBVRqHKbmQP0rRg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Caio\\Desktop\\ProjInter-MVC\\ProjInter-MVC.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Caio\\.nuget\\packages\\microsoft.aspnetcore.jsonpatch\\7.0.8\\microsoft.aspnetcore.jsonpatch.7.0.8.nupkg.sha512",
+    "C:\\Users\\Caio\\.nuget\\packages\\microsoft.aspnetcore.mvc.newtonsoftjson\\7.0.8\\microsoft.aspnetcore.mvc.newtonsoftjson.7.0.8.nupkg.sha512",
+    "C:\\Users\\Caio\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
+    "C:\\Users\\Caio\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512",
+    "C:\\Users\\Caio\\.nuget\\packages\\newtonsoft.json.bson\\1.0.2\\newtonsoft.json.bson.1.0.2.nupkg.sha512"
+  ],
+  "logs": []
+}
