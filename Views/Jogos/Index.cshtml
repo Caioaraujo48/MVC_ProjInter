@@ -8,16 +8,7 @@
 <div class="alert alert-danger" role="alert">
 @TempData["MensagemErro"]</div>
 }
-@if(Model.Foto != null)
-{
-    var base64 = Convert.ToBase64String(Model.Foto);
-    var imgSrc = String.Format("data:image/gif;base64,{0}", base64);
 
-    <dt>@Html.DisplayNameFor(model => model.Foto)</dt>
-    <img src="@imgSrc" title="@Model.Nome" width="100" height="132" />
-    <br/>
-    @Html.ActionLink("Baixar Foto", "BaixarFoto", "Usuarios", null, new { @title = "Baixar foto"})
-}
 
 @{ViewBag.Title = "Personagens"; }
 
