@@ -1,4 +1,4 @@
-using Projeto_Interdisciplinar.Models.Enuns;
+using ProjInter_MVC.Models.Enuns;
 
 namespace ProjInter_MVC.Models;
 
@@ -9,4 +9,5 @@ public class JogoViewModel{
     public string Empresa { get; set; }
     public DateTime Lançamento { get; set; }       
     public GeneroEnum Genero { get; set; }    
+    public byte[]? Foto { get; set; }
 }                  

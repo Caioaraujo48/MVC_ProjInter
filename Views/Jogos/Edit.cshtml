@@ -1,0 +1,59 @@
+@model ProjInter_MVC.Models.JogoViewModel
+@{
+    ViewBag.Title = "Editar Jogo";
+}
+<h2>Editar dados do Jogo</h2>
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+    <div class="form-horizontal">
+        <hr />
+        <div class="form-group">
+  @Html.LabelFor(Model => Model.Id, htmlAttributes: new { @class = "control-label col-md-2 "})
+            <div class="col-md-6">
+@Html.DropDownListFor(model => model.Genero, Html.GetEnumSelectList(typeof(ProjInter_MVC.Models.Enuns.GeneroEnum)),
+            "---Selecione---", new { @class = "form-control" })
+            </div>
+        </div>
+        <div class="form-group">
+            @Html.LabelFor(Model => Model.Nome, htmlAttributes: new { @class = "control-label col-md-2 "})
+            <div class="col-md-6">
+                @Html.DropDownListFor(model => model.Genero, Html.GetEnumSelectList(typeof(ProjInter_MVC.Models.Enuns.GeneroEnum)),
+            "---Selecione---", new { @class = "form-control" })
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-md-6">
+                <input type="submit" value="Salvar alterações" class="btn btn-primary" />
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-md-6">
+                <hr/>
+                    @using (Html.BeginForm("EnviarFoto", "Usuarios", FormMethod.Post, new {enctype = "multipart/form-data", id = "formFoto" }))
+                    {
+                        <div class="row">
+                            <div class="col-sm-3">
+                                <h3>Envio de foto</h3>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-3">
+                                @Html.TextBox("file", "", new {type = "file" })
+                                @Html.HiddenFor(model => model.Id, new {htmlAttributes = new {@class = "form-control" }})
+                            </div>
+                            <div class="col-sm-3">
+                                <button id="FotoSubmit" type="submit" value="Enviar Foto" class="btn btn-primary">
+                                    Enviar Foto
+                                </button>
+                            </div>
+                        </div>
+                    }
+                    <hr>
+            </div>
+        </div>
+    </div>
+}
+<div>
+    @Html.ActionLink("Retornar", "Index")
+</div>

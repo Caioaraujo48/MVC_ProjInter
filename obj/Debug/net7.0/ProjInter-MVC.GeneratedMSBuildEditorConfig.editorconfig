@@ -9,49 +9,65 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = ProjInter_MVC
 build_property.RootNamespace = ProjInter_MVC
-build_property.ProjectDir = c:\Users\Caio\Desktop\ProjInter-MVC\
+build_property.ProjectDir = C:\Users\EtecHAS\Desktop\ProjInter_MVC\
 build_property.RazorLangVersion = 7.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = c:\Users\Caio\Desktop\ProjInter-MVC
+build_property.MSBuildProjectDirectory = C:\Users\EtecHAS\Desktop\ProjInter_MVC
 build_property._RazorSourceGeneratorDebug = 
 
-[c:/Users/Caio/Desktop/ProjInter-MVC/Views/Home/Index.cshtml]
+[C:/Users/EtecHAS/Desktop/ProjInter_MVC/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/Caio/Desktop/ProjInter-MVC/Views/Home/Privacy.cshtml]
+[C:/Users/EtecHAS/Desktop/ProjInter_MVC/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/Caio/Desktop/ProjInter-MVC/Views/Shared/Error.cshtml]
+[C:/Users/EtecHAS/Desktop/ProjInter_MVC/Views/Jogos/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSm9nb3NcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/EtecHAS/Desktop/ProjInter_MVC/Views/Jogos/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSm9nb3NcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/EtecHAS/Desktop/ProjInter_MVC/Views/Jogos/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSm9nb3NcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/EtecHAS/Desktop/ProjInter_MVC/Views/Jogos/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSm9nb3NcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/EtecHAS/Desktop/ProjInter_MVC/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/Caio/Desktop/ProjInter-MVC/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/EtecHAS/Desktop/ProjInter_MVC/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/Caio/Desktop/ProjInter-MVC/Views/Usuarios/AutenticarUsuario.cshtml]
+[C:/Users/EtecHAS/Desktop/ProjInter_MVC/Views/Usuarios/AutenticarUsuario.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb3NcQXV0ZW50aWNhclVzdWFyaW8uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/Caio/Desktop/ProjInter-MVC/Views/Usuarios/CadastrarUsuario.cshtml]
+[C:/Users/EtecHAS/Desktop/ProjInter_MVC/Views/Usuarios/CadastrarUsuario.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb3NcQ2FkYXN0cmFyVXN1YXJpby5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/Caio/Desktop/ProjInter-MVC/Views/Usuarios/IndexInformacoes.cshtml]
+[C:/Users/EtecHAS/Desktop/ProjInter_MVC/Views/Usuarios/IndexInformacoes.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb3NcSW5kZXhJbmZvcm1hY29lcy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/Caio/Desktop/ProjInter-MVC/Views/_ViewImports.cshtml]
+[C:/Users/EtecHAS/Desktop/ProjInter_MVC/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/Caio/Desktop/ProjInter-MVC/Views/_ViewStart.cshtml]
+[C:/Users/EtecHAS/Desktop/ProjInter_MVC/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/Caio/Desktop/ProjInter-MVC/Views/Shared/_Layout.cshtml]
+[C:/Users/EtecHAS/Desktop/ProjInter_MVC/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-q96zr0zn3g

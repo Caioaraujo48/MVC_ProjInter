@@ -1,0 +1,55 @@
+@model IEnumerable<ProjInter_MVC.Models.JogoViewModel>
+@{ ViewBag.Title = "Index"; }
+@if (@TempData["Mensagem"] != null) {
+<div class="alert alert-success" role="alert">
+@TempData["Mensagem"]</div>
+}
+@if (@TempData["MensagemErro"] != null) {
+<div class="alert alert-danger" role="alert">
+@TempData["MensagemErro"]</div>
+}
+@if(Model.Foto != null)
+{
+    var base64 = Convert.ToBase64String(Model.Foto);
+    var imgSrc = String.Format("data:image/gif;base64,{0}", base64);
+
+    <dt>@Html.DisplayNameFor(model => model.Foto)</dt>
+    <img src="@imgSrc" title="@Model.Nome" width="100" height="132" />
+    <br/>
+    @Html.ActionLink("Baixar Foto", "BaixarFoto", "Usuarios", null, new { @title = "Baixar foto"})
+}
+
+@{ViewBag.Title = "Personagens"; }
+
+<!--Título da página para o navegador-->
+<h2>Relação de Personagens</h2>
+<!--Título da página-->
+<p>
+    <!--Links apontando para views na mesma pasta-->
+    @Html.ActionLink("Adicionar Novo Jogo", "Create")
+</p>
+<table class="table">
+    <tr>
+        <!--Títulos das colunas da tabela-->
+        <th>@Html.DisplayNameFor(model => model.Foto)</th>
+        <th>@Html.DisplayNameFor(model => model.Id)</th>
+        <th>@Html.DisplayNameFor(model => model.Nome)</th>
+        <th>@Html.DisplayNameFor(model => model.Genero)</th>
+        <th></th>
+    </tr>
+    <!--Looping para escrever os dados na tabela-->
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@Html.DisplayFor(modelItem => item.Foto)</td>
+            <td>@Html.DisplayFor(modelItem => item.Id)</td>
+            <td>@Html.DisplayFor(modelItem => item.Nome)</td>
+            <td>@Html.DisplayFor(modelItem => item.Genero)</td>
+            <td>
+                <!--Coluna para Links/botões-->
+                @Html.ActionLink("Detalhes", "Details", new { id = item.Id }) |
+                @Html.ActionLink("Deletar", "Delete", new { id = item.Id })
+                
+            </td>
+        </tr>
+    }
