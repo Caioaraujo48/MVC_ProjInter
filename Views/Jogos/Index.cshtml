@@ -1,19 +1,23 @@
 @model IEnumerable<ProjInter_MVC.Models.JogoViewModel>
-@{ ViewBag.Title = "Index"; }
-@if (@TempData["Mensagem"] != null) {
-<div class="alert alert-success" role="alert">
-@TempData["Mensagem"]</div>
+@{ 
+    ViewBag.Title = "Index"; 
 }
-@if (@TempData["MensagemErro"] != null) {
-<div class="alert alert-danger" role="alert">
-@TempData["MensagemErro"]</div>
+@if (@TempData["Mensagem"] != null) 
+{
+    <div class="alert alert-success" role="alert">
+    @TempData["Mensagem"]</div>
+}
+@if (@TempData["MensagemErro"] != null) 
+{
+    <div class="alert alert-danger" role="alert">
+    @TempData["MensagemErro"]</div>
 }
 
 
-@{ViewBag.Title = "Personagens"; }
+@{ViewBag.Title = "Jogos"; }
 
 <!--Título da página para o navegador-->
-<h2>Relação de Personagens</h2>
+<h2>Lista de Jogos</h2>
 <!--Título da página-->
 <p>
     <!--Links apontando para views na mesma pasta-->
@@ -22,7 +26,6 @@
 <table class="table">
     <tr>
         <!--Títulos das colunas da tabela-->
-        <th>@Html.DisplayNameFor(model => model.Foto)</th>
         <th>@Html.DisplayNameFor(model => model.Id)</th>
         <th>@Html.DisplayNameFor(model => model.Nome)</th>
         <th>@Html.DisplayNameFor(model => model.Genero)</th>
@@ -32,7 +35,6 @@
     @foreach (var item in Model)
     {
         <tr>
-            <td>@Html.DisplayFor(modelItem => item.Foto)</td>
             <td>@Html.DisplayFor(modelItem => item.Id)</td>
             <td>@Html.DisplayFor(modelItem => item.Nome)</td>
             <td>@Html.DisplayFor(modelItem => item.Genero)</td>
@@ -44,3 +46,4 @@
             </td>
         </tr>
     }
+</table>

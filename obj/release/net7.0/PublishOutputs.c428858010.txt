@@ -1,0 +1,11 @@
+C:\Users\Caio\Desktop\MVC_ProjInter\publish\ProjInter-MVC.exe
+C:\Users\Caio\Desktop\MVC_ProjInter\publish\appsettings.Development.json
+C:\Users\Caio\Desktop\MVC_ProjInter\publish\appsettings.json
+C:\Users\Caio\Desktop\MVC_ProjInter\publish\ProjInter-MVC.dll
+C:\Users\Caio\Desktop\MVC_ProjInter\publish\ProjInter-MVC.deps.json
+C:\Users\Caio\Desktop\MVC_ProjInter\publish\ProjInter-MVC.runtimeconfig.json
+C:\Users\Caio\Desktop\MVC_ProjInter\publish\ProjInter-MVC.pdb
+C:\Users\Caio\Desktop\MVC_ProjInter\publish\Microsoft.AspNetCore.JsonPatch.dll
+C:\Users\Caio\Desktop\MVC_ProjInter\publish\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
+C:\Users\Caio\Desktop\MVC_ProjInter\publish\Newtonsoft.Json.dll
+C:\Users\Caio\Desktop\MVC_ProjInter\publish\Newtonsoft.Json.Bson.dll

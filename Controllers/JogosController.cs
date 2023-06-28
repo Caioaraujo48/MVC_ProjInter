@@ -17,7 +17,7 @@ public class JogosController : Controller
 
                 string uriComplementar = "GetAll";//Conter o nome do método
                 HttpClient httpClient = new HttpClient(); // Fará toda a transição de requisição
-                string token = HttpContext.Session.GetString("SessionTokenUsuario");//Token recuperado da Sessão
+                string token = HttpContext.Session.GetString("SessionTokenJogo");//Token recuperado da Sessão
                 httpClient.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", token); //Requisição com o token para carregamento do header
 
                 HttpResponseMessage response = await httpClient.GetAsync(uriBase + uriComplementar); //Guarda a resposta da Requisição
@@ -48,7 +48,7 @@ public class JogosController : Controller
             try
             {
                 HttpClient httpClient = new HttpClient();
-                string token = HttpContext.Session.GetString("SessionTokenUsuario");
+                string token = HttpContext.Session.GetString("SessionTokenJogo");
                 httpClient.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", token);
 
                 var content = new StringContent(JsonConvert.SerializeObject(p));
@@ -83,7 +83,7 @@ public class JogosController : Controller
             try
             {
                 HttpClient httpClient = new HttpClient();
-                string token = HttpContext.Session.GetString("SessionTokenUsuario");
+                string token = HttpContext.Session.GetString("SessionTokenJogo");
                 httpClient.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", token);
                 HttpResponseMessage response = await httpClient.GetAsync(uriBase + id.ToString());
                 string serialized = await response.Content.ReadAsStringAsync();
@@ -109,7 +109,7 @@ public class JogosController : Controller
             try
             {
                 HttpClient httpClient = new HttpClient();
-                string token = HttpContext.Session.GetString("SessionTokenUsuario");
+                string token = HttpContext.Session.GetString("SessionTokenJogo");
 
                 httpClient.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", token);
                 HttpResponseMessage response = await httpClient.GetAsync(uriBase + id.ToString());
@@ -137,7 +137,7 @@ public class JogosController : Controller
             try
             {
                 HttpClient httpClient = new HttpClient();
-                string token = HttpContext.Session.GetString("SessionTokenUsuario");
+                string token = HttpContext.Session.GetString("SessionTokenJogo");
 
                 httpClient.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", token);
                 var content = new StringContent(JsonConvert.SerializeObject(p));
@@ -167,7 +167,7 @@ public class JogosController : Controller
             try
             {
                 HttpClient httpClient = new HttpClient();
-                string token = HttpContext.Session.GetString("SessionTokenUsuario");
+                string token = HttpContext.Session.GetString("SessionTokenJogo");
                 httpClient.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", token);
 
                 HttpResponseMessage response = await httpClient.DeleteAsync(uriBase + id.ToString());
@@ -188,7 +188,7 @@ public class JogosController : Controller
             }
         }
 
-        [HttpPost]
+       /* [HttpPost]
         public async Task<ActionResult> EnviarFoto(JogoViewModel u)
         {
             try
@@ -211,7 +211,7 @@ public class JogosController : Controller
                         u.Foto = ms.ToArray();
                     }
                     HttpClient httpClient = new HttpClient();
-                        string token = HttpContext.Session.GetString("SessionTokenUsuario");
+                        string token = HttpContext.Session.GetString("SessionTokenJogo");
                         httpClient.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", token);
 
                         string uriComplementar = "AtualizarFoto";
@@ -265,5 +265,5 @@ public class JogosController : Controller
                 TempData["MensagemErro"] = ex.Message;
                 return RedirectToAction("Index");
             }
-        }
+        }*/
 }
